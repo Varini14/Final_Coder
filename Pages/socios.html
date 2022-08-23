@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socios</title>
+    <link rel="stylesheet" href="./../Styles/style.css" />
+    <link rel="icon" href="./../Img/Logo_club_favicon.png" />
+  </head>
+  <body class="todo">
+    <header class="header__principal">
+      <h1 class="header__titulo"><strong>Socios</strong></h1>
+      <div class="img__logo">
+        <img class="logo" src="./../Img/Logo_1.jpeg" alt="Logo" />
+      </div>
+
+      <nav class="menu">
+        <ul class="menu__nav">
+          <li><a href="./../index.html">Home</a></li>
+          <li><a href="./institucional.html">Institucional</a></li>
+          <li><a href="./deportes.html">Deportes</a></li>
+          <li><a href="./contactos.html">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="contenido contenido__socios">
+      <h2 class="titulo__socios">Asociate</h2>
+
+      <section class="sec__soc">
+        <p>
+          Si queres ser parte de la familia del club, hace tu preinscripcion
+          online aquí abajo
+        </p>
+        <form class="form__soc" action="">
+          <fieldset>
+            <label class="label__soc" for="name">Nombre:</label>
+            <input class="input__soc" type="text" id="name" required />
+            <label class="label__soc" for="apellidos">Apellido:</label>
+            <input class="input__soc" type="text" id="apellidos" required />
+            <br />
+            <label class="label__soc" for="mydate">Fecha de Nacimiento:</label>
+            <input class="input__soc" type="date" id="mydate" required />
+            <label class="label__soc" for="dni">DNI:</label>
+            <input
+              class="input__soc"
+              type="number"
+              id="dni"
+              required
+              placeholder="Solo números sin puntos ni comas"
+            />
+            <label class="label__soc" for="men">Hombre</label>
+            <input class="input__soc" type="radio" id="men" required />
+            <label class="label__soc" for="woman">Mujer</label>
+            <input class="input__soc" type="radio" id="woman" required />
+            <label class="label__soc" for="other">Otro</label>
+            <input class="input__soc" type="radio" id="other" required />
+            <input
+              class="input__soc"
+              type="text"
+              placeholder="Específica cuál"
+            />
+            <label class="label__soc" for="nn">Prefiero no responder</label>
+            <input class="input__soc" type="radio" id="nn" required />
+            <br />
+            <br />
+            <label class="label__soc" for="terminos"
+              >¿Aceptas términos y condiciones?</label
+            >
+            <br />
+            <input class="input__soc" type="checkbox" id="terminos" />
+            <br />
+            <input class="input__soc" type="submit" />
+            <input class="input__soc" type="reset" />
+          </fieldset>
+        </form>
+      </section>
+
+      <div class="conteiner__soc">
+        <h2>¿Comó termino de inscribirme?</h2>
+        <p>
+          El trámite lo terminas acercandote a la secretaría del club de 8:00 a
+          20:00 hs
+        </p>
+      </div>
+      <iframe
+        class="iframe__soc"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14172.91534329204!2d-55.9247224!3d-27.368567900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945739be70f7ddcb%3A0xd7e016330f0d0873!2sClub%20Social%20y%20Deportivo%20Yacyreta!5e0!3m2!1ses!2sar!4v1658426805663!5m2!1ses!2sar"
+        width="400"
+        height="300"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      <div class="conteiner__tab">
+        <h2>Aranceles</h2>
+        <p>Los aranceles se abonan según la categoría del socio:</p>
+        <table class="tab">
+          <thead>
+            <tr>
+              <th colspan="3">Cuota Societaria</th>
+            </tr>
+
+            <tr>
+              <th>Infantiles</th>
+              <th>Cadetes</th>
+              <th>Mayores</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4 a 11 años</td>
+              <td>12 a 17 años</td>
+              <td>18 a 70 años</td>
+            </tr>
+            <tr>
+              <td>$500</td>
+              <td>$1000</td>
+              <td>$1500</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <th colspan="3">
+              <small>Por descuentos acercarse a secretaría</small>
+            </th>
+          </tfoot>
+        </table>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p>Copyright &copy; 2022</p>
+        <p>Todos los derechos reservados</p>
+        <p>Club Yacyretá</p>
+      </div>
+      <div class="imagen__footer">
+        <a
+          href="https://www.instagram.com/clubyacyreta_oficial/"
+          target="_blank"
+          ><img
+            class="footer__imagen"
+            src="./../Img/Redes_1.png"
+            alt="Instagram"
+        /></a>
+
+        <a
+          href="https://www.facebook.com/Club-Social-y-Deportivo-Yacyreta-101043045781165"
+          target="_blank"
+          ><img
+            class="footer__imagen"
+            src="./../Img/Redes_2.png"
+            alt="Facebook"
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
