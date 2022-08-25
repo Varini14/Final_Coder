@@ -21,6 +21,11 @@
 /*Estilos Encabezado*/
 .header__principal {
   width: 100%;
+  grid-area: encabezado;
+  background: #000000;
+}
+
+.bg-light {
   background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
@@ -28,7 +33,11 @@
     rgba(255, 68, 0, 1) 56%,
     rgba(255, 94, 0, 1) 80%
   );
-  grid-area: encabezado;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  background-color: #ff4500;
 }
 
 .header__titulo {
@@ -39,7 +48,8 @@
 }
 
 .logo {
-  width: 300px;
+  width: 200px;
+  border-radius: 100px;
 }
 
 .slide-in-fwd-center {
@@ -58,38 +68,7 @@
   }
 }
 
-.img__logo {
-  display: flex;
-  justify-content: center;
-}
-
-/*Estilos de Menu Principal*/
-.menu {
-  display: flex;
-  justify-content: center;
-}
-
-.menu .menu__nav {
-  display: flex;
-  gap: 15px;
-  margin: 20px;
-  padding-inline: 10px;
-  font-size: 30px;
-  list-style: none;
-  background-color: #000000;
-  border-radius: 5px;
-}
-
-.menu__nav a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.menu a:hover {
-  text-decoration: underline;
-  background-color: #000000;
-}
-/*Estilos Noticias*/
+/*Estilos Main*/
 .contenido {
   background-image: url(./../Img/fondo_1.jpeg);
   background-repeat: no-repeat;
@@ -100,6 +79,7 @@
 }
 
 .slider__titulo {
+  color: #000000;
   background: rgb(255, 69, 0);
   background: linear-gradient(
     90deg,
@@ -294,6 +274,7 @@
 }
 
 .footer p {
+  color: #000000;
   text-align: center;
   text-shadow: 2px 2px 2px #ffffff;
 }
@@ -309,11 +290,11 @@
   }
 
   .header__principal {
-    background: #000000;
+    background-color: #000000;
   }
 
   .logo {
-    width: 200px;
+    width: 100px;
   }
 
   .slider {
@@ -560,18 +541,7 @@ tbody {
   background-position: center center;
 }
 
-.form__contac {
-  width: 30%;
-  margin: 20px auto;
-  background-color: #ff440061;
-  border-radius: 10px;
-  text-align: center;
-}
-
-.form__titulo {
-  font-size: 30px;
-  text-align: center;
-  margin: 15px;
+.contacto__titulo {
   background: rgb(255, 69, 0);
   background: linear-gradient(
     90deg,
@@ -579,30 +549,7 @@ tbody {
     rgba(207, 91, 8, 1) 83%,
     rgba(246, 132, 0, 1) 100%
   );
+  color: #000000;
+  text-align: center;
   text-shadow: 2px 2px 2px #ffffff;
-}
-
-.form__box {
-  border-radius: 15px;
-  border: solid black;
-}
-
-.form__label {
-  color: #ffffff;
-  text-shadow: 2px 2px 2px #000000;
-}
-
-.form__input {
-  margin: 10px;
-  border: #000000;
-}
-
-.form__area {
-  border-radius: 8px;
-  border: solid #000000;
-}
-
-.form__boton {
-  border-radius: 5px;
-  padding: 12px;
 }
