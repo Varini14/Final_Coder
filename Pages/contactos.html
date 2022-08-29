@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./../Styles/style.css" />
   </head>
   <body class="todo">
+
     <header class="header__principal">
       <nav
         class="navbar navbar-expand-lg bg-light fs-2 text d-flex flex-column">
@@ -64,85 +65,51 @@
       <section>
         <div class="container">
           <div class="row mt-5 gap-5">
-            <div class="colum-md-6">
-              <h4 class="contacto__titulo tracking-in-contract">Informacion</h4>
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button
-                      class="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="false"
-                      aria-controls="collapseOne"
-                    >
-                      Dirección
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body acorde">
-                      <p>Avenida Tranquera del Loreto y Apipe</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      E-mail
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <p>clubyacyreta@example.com</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button
-                      class="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      Teléfno
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    class="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div class="accordion-body">
-                      <p>+54 03786-425...</p>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="colum-md-6 acordeon">
+              <h4 class="contacto__titulo tracking-in-contract">Información</h4>
+              <div class="accordion accordion-flush mb-3" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Direccion
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body d-flex flex-column">Tranquera del Loreto y Pago Largo
+                <iframe
+          class="iframe__soc"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14172.91534329204!2d-55.9247224!3d-27.368567900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x945739be70f7ddcb%3A0xd7e016330f0d0873!2sClub%20Social%20y%20Deportivo%20Yacyreta!5e0!3m2!1ses!2sar!4v1658426805663!5m2!1ses!2sar"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Teléfono
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">+54 03786-425...</div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        E-mail
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">clubyacyreta_oficial@example.com</div>
+    </div>
+  </div>
+</div>
             </div>
-            <div class="colum-md-6">
+            <div class="colum-md-6 formulario">
               <h4 class="contacto__titulo tracking-in-contract">Contactanos</h4>
               <div class="mb-3">
   <label for="exampleFormControlInput1" class="form-label text-white fs-5 text">Email</label>
@@ -151,6 +118,7 @@
 <div class="mb-3">
   <label for="exampleFormControlTextarea1" class="form-label text-white fs-5 text">Escribenos un comentario</label>
   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+<button type="button" class="btn btn-light mt-2">Enviar</button>
 </div>
             </div>
         </div>
