@@ -193,14 +193,17 @@
 .sport__conteiner {
   margin: 20px 0 20px 0;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
   grid-template-rows: 1fr 1fr;
   gap: 30px;
   place-items: center;
 }
+.sport__conteiner {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+}
 
 .card__sport {
-  width: 30%;
+  width: 80%;
   background: rgb(255, 69, 0);
   background: linear-gradient(
     90deg,
@@ -220,7 +223,7 @@
 }
 
 .card__sport:hover {
-  transform: scale(1.1) translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .card__titulo {
@@ -256,20 +259,6 @@
 }
 
 /*Estilos Pie de Página*/
-.footer {
-  width: 100%;
-  background: rgb(255, 69, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 69, 0, 1) 11%,
-    rgba(207, 91, 8, 1) 83%,
-    rgba(246, 132, 0, 1) 100%
-  );
-  display: flex;
-  justify-content: space-between;
-  border: 1px solid rgb(0, 0, 0);
-  grid-area: pie;
-}
 
 .footer__imagen {
   width: 40px;
@@ -367,15 +356,6 @@
   .tarjetas__institucional {
     width: 50%;
   }
-
-  .depor {
-    width: 5vh;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media screen and (max-width: 250px) {
 }
 
 /*Estilos de Page Intitucional*/
@@ -516,9 +496,7 @@ tbody {
 }
 
 .tarjetas__deportes {
-  width: 15%;
-  height: 15%;
-  background: rgb(255, 69, 0);
+  width: 300px;
   background: linear-gradient(
     90deg,
     rgba(255, 69, 0, 1) 11%,
@@ -529,7 +507,7 @@ tbody {
 }
 
 .tarjetas__deportes:hover {
-  transform: scale(1.1) translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .card-title {
