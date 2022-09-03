@@ -1,0 +1,29 @@
+{
+  "name": "agregando_sass",
+  "version": "1.0.0",
+  "description": "agregando sass a mi proyecto final",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss Styles/scss/origin.scss Styles/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Varini14/Final_Coder.git"
+  },
+  "keywords": [
+    "npm",
+    "sass",
+    "coder"
+  ],
+  "author": "Fabrizio Varini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Varini14/Final_Coder/issues"
+  },
+  "homepage": "https://github.com/Varini14/Final_Coder#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}
