@@ -1,0 +1,14 @@
+footer {
+  width: 100%;
+  grid-area: pie;
+
+  .footer__imagen {
+    width: 40px;
+    border: solid black;
+    border-radius: 20px;
+  }
+
+  .gg {
+    padding: 0 10px;
+  }
+}

@@ -265,14 +265,14 @@ footer {
   grid-area: pie;
 }
 
-.gg {
-  padding: 0 10px;
-}
-
 .footer__imagen {
   width: 40px;
   border: solid black;
   border-radius: 20px;
+}
+
+.gg {
+  padding: 0 10px;
 }
 
 /*Medidas Responsive*/

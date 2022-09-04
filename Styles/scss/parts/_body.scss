@@ -1,0 +1,10 @@
+.todo {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "encabezado encabezado encabezado encabezado"
+    "contenido contenido contenido contenido"
+    "pie pie pie pie";
+}

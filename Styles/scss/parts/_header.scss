@@ -1,0 +1,32 @@
+.header__principal {
+  width: 100%;
+  grid-area: encabezado;
+  background: #000000;
+
+  .bg-light {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 1) 29%,
+      rgba(255, 68, 0, 1) 56%,
+      rgba(255, 94, 0, 1) 80%
+    );
+  }
+
+  .header__titulo {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 3px 3px 3px #000000;
+    padding: 20px;
+  }
+
+  .logo {
+    width: 200px;
+    border-radius: 100px;
+  }
+
+  .nav-link:hover {
+    background-color: #ff4500;
+    transition: 0.8s;
+  }
+}

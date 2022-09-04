@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Acme", sans-serif; }
+
+.todo {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "encabezado encabezado encabezado encabezado" "contenido contenido contenido contenido" "pie pie pie pie"; }
+
+.header__principal {
+  width: 100%;
+  grid-area: encabezado;
+  background: #000000; }
+  .header__principal .bg-light {
+    background: black;
+    background: radial-gradient(circle, black 29%, #ff4400 56%, #ff5e00 80%); }
+  .header__principal .header__titulo {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 3px 3px 3px #000000;
+    padding: 20px; }
+  .header__principal .logo {
+    width: 200px;
+    border-radius: 100px; }
+  .header__principal .nav-link:hover {
+    background-color: #ff4500;
+    transition: 0.8s; }
+
+.contenido {
+  background-image: url(./../Img/fondo_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  grid-area: contenido;
+  background-attachment: fixed; }
+  .contenido .slider__titulo {
+    color: #000000;
+    background: orangered;
+    background: linear-gradient(90deg, orangered 11%, #cf5b08 83%, #f68400 100%);
+    text-align: center;
+    font-size: 30px;
+    margin: 15px;
+    text-shadow: 2px 2px 2px #ffffff; }
+  .contenido .tracking-in-contract {
+    -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+    animation-delay: 0.5s; }
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0; }
+  40% {
+    opacity: 0.6; }
+  100% {
+    letter-spacing: normal;
+    opacity: 1; } }
+  .contenido .slider {
+    width: 30%;
+    margin: auto;
+    overflow: hidden;
+    border: 6px solid #ff4500; }
+    .contenido .slider .slider ul {
+      display: flex;
+      padding: 0;
+      width: 300%;
+      align-content: center;
+      animation: cambio 3s infinite alternate linear; }
+    .contenido .slider .slider li {
+      width: 100%;
+      list-style: none; }
+    .contenido .slider .slider img {
+      width: 100%;
+      display: flex;
+      align-content: center; }
+
+@keyframes cambio {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -100%; }
+  70% {
+    margin-left: -100%; }
+  75% {
+    margin-left: -200%; }
+  100% {
+    margin-left: -200%; } }
+
+footer {
+  width: 100%;
+  grid-area: pie; }
+  footer .footer__imagen {
+    width: 40px;
+    border: solid black;
+    border-radius: 20px; }
+  footer .gg {
+    padding: 0 10px; }
