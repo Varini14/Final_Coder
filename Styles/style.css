@@ -367,7 +367,8 @@ footer {
   text-shadow: 2px 2px 2px #ffffff;
 }
 
-.card__imagen {
+.card-body {
+  width: 100%;
   background: rgb(255, 69, 0);
   background: linear-gradient(
     90deg,
