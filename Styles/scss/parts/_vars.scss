@@ -1,3 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 
 $fontacme: "Acme", sans-serif;
+
+$maincolor: linear-gradient(
+  90deg,
+  rgba(246, 132, 0, 1) 0%,
+  rgb(30, 255, 0) 50%,
+  rgba(246, 132, 0, 1) 100%
+);

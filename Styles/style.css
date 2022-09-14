@@ -26,12 +26,12 @@
 }
 
 .bg-light {
-  background: rgb(0, 0, 0);
-  background: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 29%,
-    rgba(255, 68, 0, 1) 56%,
-    rgba(255, 94, 0, 1) 80%
+  background: rgb(246, 132, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(246, 132, 0, 1) 0%,
+    rgba(255, 69, 0, 1) 50%,
+    rgba(246, 132, 0, 1) 100%
   );
 }
 
@@ -50,10 +50,6 @@
 .logo {
   width: 200px;
   border-radius: 100px;
-}
-
-.acorde {
-  background-color: orangered;
 }
 
 .slide-in-fwd-center {
@@ -122,7 +118,6 @@
   width: 30%;
   margin: auto;
   overflow: hidden;
-  border: 6px solid #ff4500;
 }
 
 .slider ul {
@@ -196,7 +191,7 @@
   grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
   grid-template-rows: 1fr 1fr;
   gap: 30px;
-  place-items: center;
+  place-content: center;
 }
 .sport__conteiner {
   grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
@@ -285,22 +280,19 @@ footer {
     flex-direction: column;
   }
 
-  .header__principal {
-    background-color: #000000;
-  }
-
   .logo {
-    width: 100px;
+    width: 150px;
   }
 
   .slider {
-    width: 150px;
+    width: 90%;
   }
 
   .card__sport {
     width: 80px;
     padding: 10px;
     display: grid;
+    place-items: center;
   }
 
   .sport__conteiner {
@@ -333,31 +325,22 @@ footer {
   .card__titulo {
     font-size: 15px;
   }
-  .menu__nav {
+  .contenedor__socios {
+    width: 10vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
   }
 
   .form__contac {
     width: 100vh;
   }
 
-  .sec__soc form {
-    background-color: aqua;
-    width: 80%;
-  }
-
-  .form__soc {
-    background-color: aqua;
-    width: 50vw;
-  }
-
-  .conteiner__soc {
-    width: 50vw;
-  }
-
   .tarjetas__institucional {
-    width: 50%;
+    width: 40px;
+  }
+
+  .deportes {
+    width: 60%;
   }
 }
 
@@ -417,9 +400,18 @@ footer {
 }
 
 .form__socios {
-  border: solid 1px #ffffff;
+  border: solid 3px #ffffff;
+  width: 60vh;
 }
 
+.text__socios {
+  background-color: #00000098;
+}
+
+.table {
+  background-color: #00000098;
+  color: #ffffff;
+}
 /*Estilos de Page Deportes*/
 .contenido__deportes {
   background-image: url(./../Img/fondo_1.jpeg);
@@ -501,6 +493,10 @@ footer {
 
 .acordeon {
   border: solid 3px #ffffff;
+}
+
+.acorde {
+  background-color: #ff4500;
 }
 
 .formulario {
