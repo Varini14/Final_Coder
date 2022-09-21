@@ -325,6 +325,7 @@ footer {
   .card__titulo {
     font-size: 15px;
   }
+
   .contenedor__socios {
     width: 80%;
     margin: 0 auto;
@@ -403,7 +404,6 @@ footer {
 
 .form__socios {
   border: solid 3px #ffffff;
-  width: 60vh;
 }
 
 .text__socios {

@@ -77,59 +77,69 @@
     <main class="contenido contenido__socios">
       <h2 class="titulo__socio tracking-in-contract">Asociate</h2>
       <p class="text__socios text-white text-center fs-5">
-        ¿Queres formar parte de la familia Yacyretá? Realiza la preinscripcion
+        ¿Queres formar parte de la familia Yacyretá? Realiza la preinscripción
         en el siguiente formulario:
       </p>
-      <div
-        class="d-flex flex-column justify-content-center align-items-center contenedor__socios"
-      >
-        <form class="row g-3 form__socios my-2">
-          <div class="col-md-6">
-            <label for="Nombre" class="form-label text-white">Nombre</label>
-            <input type="text" class="form-control" id="Nombre" />
-          </div>
-          <div class="col-md-6">
-            <label for="Apellido" class="form-label text-white">Apellido</label>
-            <input type="text" class="form-control" id="Apellido" />
-          </div>
 
-          <div class="col-md-6">
-            <label for="Nacimiento" class="form-label text-white"
-              >Fecha de Nacimiento</label
-            >
-            <input type="date" class="form-control" id="Nacimiento" />
-          </div>
-
-          <div class="col-md-6">
-            <label for="email" class="form-label text-white">Email</label>
-            <input type="email" class="form-control" id="email" />
-          </div>
-
-          <div class="col-md-6">
-            <label for="tel" class="form-label text-white"
-              >Teléfono o Celular</label
-            >
+      <div class="container form__socios mb-3">
+        <div class="row">
+          <div class="col-6">
+            <label for="nameinput" class="form-label text-white">Nombre:</label>
             <input
-              type="tel"
+              type="text"
               class="form-control"
-              placeholder="introduce sin 0 y 15"
-              id="tel"
+              id="nameinput"
+              placeholder="Escribe tu nombre"
             />
           </div>
-
-          <div class="col-12">
+          <div class="col-6 mb-3">
+            <label for="surnameinput" class="form-label text-white"
+              >Apellido:</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="surnameinput"
+              placeholder="Escribe tu Apellido"
+            />
+          </div>
+          <div class="col-6 mb-3">
+            <label for="dateinput" class="form-label text-white"
+              >Fecha de Nacimiento:</label
+            >
+            <input type="date" class="form-control" id="dateinput" />
+          </div>
+          <div class="col-6 mb-3">
+            <label for="dateinput" class="form-label text-white"
+              >DNI:</label
+            >
+            <input type="number" class="form-control" id="dateinput" />
+          </div>
+          <div class="col-6">
+           <label for="telinput" class="form-label text-white"
+              >Teléfono:</label
+            >
+            <input type="tel" class="form-control" id="telinput" placeholder="Introducir sin 0 ni 15" />
+          </div>
+          <div class="col-6 mb-3">
+           <label for="mailinput" class="form-label text-white"
+              >Email:</label
+            >
+            <input type="email" class="form-control" id="mailinput" placeholder="Ingresa tu email" />
+          </div>
+          <div class="col-12 mb-3">
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck" />
-              <label class="form-check-label text-white" for="gridCheck">
-                Acepta los términos y condiciones
-              </label>
-            </div>
+              <input type="checkbox" id="checkterms" class="form-check-input">
+            <label for="checkterms" class="form-check-label text-white">Acepto términos y condiciones</label>
           </div>
-          <div class="col-12 mb-1 justify-content-center">
-            <button type="submit" class="btn btn-primary">Enviar</button>
           </div>
-        </form>
+          <div class="col-12 mb-2">
+            <button type="submit" class="btn btn-light">Enviar</button>
+          </div>
+          </div>
+        </div>
       </div>
+
       <p class="text__socios text-white text-center fs-5">
         Para terminar la inscripción te requerimos un cértificado de buena salud
         de tu médico de cabecera, el cual deberás llevarlo a la secretaría del
