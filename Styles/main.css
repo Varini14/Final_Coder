@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "Acme", sans-serif; }
 
-.todo {
+body {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -38,7 +38,8 @@
   background-size: cover;
   background-position: center center;
   grid-area: contenido;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  /*Estilos Seccion Deportes */ }
   .contenido .slider__titulo {
     color: #000000;
     background: orangered;
@@ -64,21 +65,20 @@
   .contenido .slider {
     width: 30%;
     margin: auto;
-    overflow: hidden;
-    border: 6px solid #ff4500; }
-    .contenido .slider .slider ul {
-      display: flex;
-      padding: 0;
-      width: 300%;
-      align-content: center;
-      animation: cambio 3s infinite alternate linear; }
-    .contenido .slider .slider li {
-      width: 100%;
-      list-style: none; }
-    .contenido .slider .slider img {
-      width: 100%;
-      display: flex;
-      align-content: center; }
+    overflow: hidden; }
+  .contenido .slider ul {
+    display: flex;
+    padding: 0;
+    width: 300%;
+    align-content: center;
+    animation: cambio 3s infinite alternate linear; }
+  .contenido .slider li {
+    width: 100%;
+    list-style: none; }
+  .contenido .slider img {
+    width: 100%;
+    display: flex;
+    align-content: center; }
 
 @keyframes cambio {
   0% {
@@ -97,6 +97,59 @@
     margin-left: -200%; }
   100% {
     margin-left: -200%; } }
+  .contenido .sport__titulo_ {
+    background: orangered;
+    background: linear-gradient(90deg, orangered 11%, #cf5b08 83%, #f68400 100%);
+    font-size: 30px;
+    text-align: center;
+    color: #000000;
+    text-shadow: 2px 2px 2px #ffffff;
+    margin: 15px; }
+  .contenido .sport__conteiner {
+    margin: 20px 0 20px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    place-content: center; }
+  .contenido .sport__conteiner {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px)); }
+  .contenido .card__sport {
+    width: 85%;
+    background: orangered;
+    background: linear-gradient(90deg, orangered 11%, #cf5b08 83%, #f68400 100%);
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px 0 10px;
+    cursor: default;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
+  .contenido .card__sport:hover {
+    transform: translateY(-10px); }
+  .contenido .card__titulo {
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #000000; }
+  .contenido .sport {
+    width: 30%;
+    background-color: #ff4500;
+    border: solid black;
+    border-radius: 15px;
+    cursor: default;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    transition: transform 0.2s ease; }
+  .contenido .sport:hover {
+    transform: translateY(-10px); }
+  .contenido .sport__imagen {
+    width: 100%; }
+  .contenido .sport__titulo {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+    padding: 15px; }
 
 /*Estilos de Page Intitucional*/
 .contenido__inst {
