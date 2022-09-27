@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 * {
   margin: 0;
@@ -97,6 +98,96 @@
   100% {
     margin-left: -200%; } }
 
+/*Estilos de Page Intitucional*/
+.contenido__inst {
+  background-image: url(./../Img/fondo_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .contenido__inst .titulo__inst {
+    background: linear-gradient(90deg, orangered 11%, #cf5b08 83%, #f68400 100%);
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #ffffff; }
+  .contenido__inst .card-body {
+    width: 100%;
+    background: linear-gradient(90deg, orangered 11%, #cf5b08 83%, #f68400 100%); }
+
+/*Estilos de Page Socios*/
+.contenido__socios {
+  background-image: url(./../Img/fondo_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .contenido__socios .titulo__socio {
+    background: linear-gradient(90deg, orangered 11%, #cf5b08 83%, #f68400 100%);
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #ffffff;
+    margin: 15px; }
+  .contenido__socios .form__socios {
+    border: solid 3px #ffffff; }
+  .contenido__socios .text__socios {
+    background-color: #00000098; }
+  .contenido__socios .table {
+    background-color: #00000098;
+    color: #ffffff; }
+
+/*Estilos de Page Deportes*/
+.contenido__deportes {
+  background-image: url(./../Img/fondo_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .contenido__deportes .titulo__depo {
+    background: linear-gradient(90deg, orangered 11%, #cf5b08 83%, #f68400 100%);
+    margin: 15px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #ffffff; }
+  .contenido__deportes .tarjetas__deportes {
+    width: 300px;
+    background: linear-gradient(90deg, orangered 11%, #cf5b08 83%, #f68400 100%);
+    border: solid 3px #ffffff;
+    position: relative;
+    transition: transform 0.2s ease; }
+  .contenido__deportes .absolute__collapse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000b5;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    border-bottom: 1px solid #c4c0c0; }
+  .contenido__deportes .tarjetas__deportes:hover {
+    transform: translateY(-10px); }
+  .contenido__deportes .card-title {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #000000; }
+
+/*Estilos de Page Contactos */
+.menu__contac {
+  background-image: url(./../Img/fondo_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .menu__contac .contacto__titulo {
+    background: linear-gradient(90deg, orangered 11%, #cf5b08 83%, #f68400 100%);
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 2px #ffffff; }
+  .menu__contac .acordeon {
+    border: solid 3px #ffffff; }
+  .menu__contac .acorde {
+    background-color: #ff4500; }
+  .menu__contac .formulario {
+    border: solid 3px #ffffff; }
+
 footer {
   width: 100%;
   grid-area: pie; }
@@ -106,3 +197,52 @@ footer {
     border-radius: 20px; }
   footer .gg {
     padding: 0 10px; }
+
+/*Medidas Responsive*/
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .slider {
+    width: 50%; } }
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; }
+  .logo {
+    width: 150px; }
+  .slider {
+    width: 90%; }
+  .card__sport {
+    width: 80px;
+    padding: 10px;
+    display: grid;
+    place-items: center; }
+  .sport__conteiner {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "voley basquet futbol" "ajedrez rugby tenis"; }
+  .voley {
+    grid-area: voley; }
+  .basquet {
+    grid-area: basquet; }
+  .futbol {
+    grid-area: futbol; }
+  .ajedrez {
+    grid-area: ajedrez; }
+  .rugby {
+    grid-area: rugby; }
+  .tenis {
+    grid-area: tenis; }
+  .card__titulo {
+    font-size: 15px; }
+  /*Medidas Página Contacto*/
+  .form__contac {
+    width: 100vh; }
+  /*Medidas Página Institucional*/
+  .tarjetas__institucional {
+    width: 40px; }
+  /*Medidas Página Deportes*/
+  .deportes {
+    display: flex;
+    flex-direction: column; } }

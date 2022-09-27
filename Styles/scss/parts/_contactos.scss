@@ -1,0 +1,27 @@
+/*Estilos de Page Contactos */
+
+.menu__contac {
+  background-image: url(./../Img/fondo_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .contacto__titulo {
+    background: $maincolor;
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px 2px #ffffff;
+  }
+
+  .acordeon {
+    border: solid 3px #ffffff;
+  }
+
+  .acorde {
+    background-color: #ff4500;
+  }
+
+  .formulario {
+    border: solid 3px #ffffff;
+  }
+}

@@ -1,0 +1,21 @@
+/*Estilos de Page Intitucional*/
+
+.contenido__inst {
+  background-image: url(./../Img/fondo_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .titulo__inst {
+    background: $maincolor;
+    font-size: 30px;
+    margin: 15px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #ffffff;
+  }
+
+  .card-body {
+    width: 100%;
+    background: $maincolor;
+  }
+}

@@ -1,0 +1,46 @@
+/*Estilos de Page Deportes*/
+.contenido__deportes {
+  background-image: url(./../Img/fondo_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .titulo__depo {
+    background: $maincolor;
+    margin: 15px;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #ffffff;
+  }
+
+  .tarjetas__deportes {
+    width: 300px;
+    background: $maincolor;
+    border: solid 3px #ffffff;
+    position: relative;
+    transition: transform 0.2s ease;
+  }
+
+  .absolute__collapse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000000b5;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    border-bottom: 1px solid rgb(196, 192, 192);
+  }
+
+  .tarjetas__deportes:hover {
+    transform: translateY(-10px);
+  }
+
+  .card-title {
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+  }
+}

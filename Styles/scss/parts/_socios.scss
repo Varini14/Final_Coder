@@ -1,0 +1,29 @@
+/*Estilos de Page Socios*/
+
+.contenido__socios {
+  background-image: url(./../Img/fondo_1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  .titulo__socio {
+    background: $maincolor;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px #ffffff;
+    margin: 15px;
+  }
+
+  .form__socios {
+    border: solid 3px #ffffff;
+  }
+
+  .text__socios {
+    background-color: #00000098;
+  }
+
+  .table {
+    background-color: #00000098;
+    color: #ffffff;
+  }
+}

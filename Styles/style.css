@@ -270,79 +270,6 @@ footer {
   padding: 0 10px;
 }
 
-/*Medidas Responsive*/
-
-@media only screen and (min-width: 360px) and (max-width: 480px) {
-  body {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .logo {
-    width: 150px;
-  }
-
-  .slider {
-    width: 90%;
-  }
-
-  .card__sport {
-    width: 80px;
-    padding: 10px;
-    display: grid;
-    place-items: center;
-  }
-
-  .sport__conteiner {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "voley basquet futbol"
-      "ajedrez rugby tenis";
-  }
-
-  .voley {
-    grid-area: voley;
-  }
-  .basquet {
-    grid-area: basquet;
-  }
-  .futbol {
-    grid-area: futbol;
-  }
-  .ajedrez {
-    grid-area: ajedrez;
-  }
-  .rugby {
-    grid-area: rugby;
-  }
-  .tenis {
-    grid-area: tenis;
-  }
-
-  .card__titulo {
-    font-size: 15px;
-  }
-
-  /*Medidas Página Contacto*/
-  .form__contac {
-    width: 100vh;
-  }
-
-  /*Medidas Página Institucional*/
-  .tarjetas__institucional {
-    width: 40px;
-  }
-
-  /*Medidas Página Deportes*/
-  .deportes {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 /*Estilos de Page Intitucional*/
 
 .contenido__inst {
@@ -501,4 +428,83 @@ footer {
 
 .formulario {
   border: solid 3px #ffffff;
+}
+
+/*Medidas Responsive*/
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .slider {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 150px;
+  }
+
+  .slider {
+    width: 90%;
+  }
+
+  .card__sport {
+    width: 80px;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+  }
+
+  .sport__conteiner {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "voley basquet futbol"
+      "ajedrez rugby tenis";
+  }
+
+  .voley {
+    grid-area: voley;
+  }
+  .basquet {
+    grid-area: basquet;
+  }
+  .futbol {
+    grid-area: futbol;
+  }
+  .ajedrez {
+    grid-area: ajedrez;
+  }
+  .rugby {
+    grid-area: rugby;
+  }
+  .tenis {
+    grid-area: tenis;
+  }
+
+  .card__titulo {
+    font-size: 15px;
+  }
+
+  /*Medidas Página Contacto*/
+  .form__contac {
+    width: 100vh;
+  }
+
+  /*Medidas Página Institucional*/
+  .tarjetas__institucional {
+    width: 40px;
+  }
+
+  /*Medidas Página Deportes*/
+  .deportes {
+    display: flex;
+    flex-direction: column;
+  }
 }
